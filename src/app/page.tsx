@@ -3,6 +3,7 @@ import { FaGithub, FaInstagram, FaLongArrowAltDown,FaHtml5,FaCss3Alt,FaJs,FaReac
 import { SiVelog,SiOracle,SiMysql } from "react-icons/si";
 import Link from "next/link";
 import { PiHandWaving } from "react-icons/pi";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -86,8 +87,16 @@ const Home = () => {
               </div>
           </div>
           <div className="w-300 h-160 flex">
-            <div className="w-100 h-150bg-gray-100 flex flex-col justify-start items-center gap-10 pt-20">
-              <div className="profile w-60 h-60 rounded-[50%] bg-blue-100"></div>
+            <div className="w-100 h-150 flex flex-col justify-start items-center gap-10 pt-20">
+              <div className="profile w-60 h-60 rounded-[50%] bg-blue-100">
+                <Image
+                  src="/img/profile.jpg"
+                  alt="profile"
+                  width={240}
+                  height={240}
+                  className="rounded-full"
+                />
+              </div>
               <div className="name">
                 <h2 className="text-xl">최성우 | Sungwoo choi</h2>
               </div>
