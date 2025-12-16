@@ -1,16 +1,21 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --background: #fafafa;
-    --foreground: #2c2c2c;
-    --maincolor: #22D3EE;
-    --font-griun: 'Griun';
-  }
+@custom-variant dark (&:where(.dark, .dark*));
+
+:root {
+  --font-griun: 'Griun';
+}
+@theme {
+  --color-background: #fafafa;
+  --color-foreground: #2c2c2c /*2c2c2c*/;
+  --color-maincolor: #22D3EE;
+  --font-griun: 'Griun';
+}
+@layer theme {
   .dark {
-    --background: #1a1a1a;
-    --foreground: #fafafa;
-    --maincolor: #22D3EE;
+    --color-background: #2c2c2c; /*#1a1a1a*/
+    --color-foreground: #fafafa;
+    --color-maincolor: #22D3EE;
   }
 }
 
