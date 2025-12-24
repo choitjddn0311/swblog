@@ -88,7 +88,7 @@ const Home = () => {
           </div>
           <div className="w-300 h-160 flex">
             <div className="w-100 h-150 flex flex-col justify-start items-center gap-10 pt-20">
-              <div className="profile w-60 h-60 rounded-[50%] bg-blue-100">
+              <div className="profile w-60 h-60 rounded-[50%]">
                 <Image
                   src="/img/profile.jpg"
                   alt="profile"
@@ -98,7 +98,7 @@ const Home = () => {
                 />
               </div>
               <div className="name">
-                <h2 className="text-xl">최성우 | Sungwoo choi</h2>
+                <h2 className="text-xl">최성우 <span className="font-bold">|</span> Sungwoo choi</h2>
               </div>
               <div className="interesting">
                 <p><span>분야</span>: Web, AI</p>
