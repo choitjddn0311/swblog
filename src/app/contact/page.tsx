@@ -9,7 +9,11 @@ const Contacts = () => {
                     <h2 className="text-xl">웹과 인공지능을 전공으로 하고있습니다.</h2>
                 </div>
                  <div className="w-full flex flex-col items-start justify-start">
+                    <h1>연락처 | Contacts</h1>
                     <ul>
+                        <li><span>email</span> <Link href="mailto:choitjddn0311@naver.com">choitjddn0311@naver.com</Link></li>
+                        <li><span>instagram</span> <Link href="https://www.instagram.com/choitjddn31">choitjddn31</Link></li>
+                        <li></li>
                     </ul>
                  </div>
             </div>
